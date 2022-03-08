@@ -1,5 +1,12 @@
+import "./App.css";
+import Todo from "./components/Todo";
+
 function App() {
-  return <></>;
+  return (
+    <div className="container">
+      <Todo />
+    </div>
+  );
 }
 
 export default App;
