@@ -16,7 +16,8 @@ const TodoForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const dt = new Date().getTime();
+
+    const dt = props.edit ? props.edit.id : new Date().getTime();
 
     props.onSubmit({
       id: dt,
