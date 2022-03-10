@@ -37,6 +37,8 @@ const TodoForm = (props) => {
               name="text"
               ref={inputRef}
               className="todo-input-edit"
+              maxLength={300}
+              autoComplete="off"
             />
           </>
         ) : (
@@ -49,6 +51,8 @@ const TodoForm = (props) => {
               name="text"
               className="todo-input"
               ref={inputRef}
+              maxLength={300}
+              autoComplete="off"
             />
           </>
         )}
